@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+
   return (
-    <div className="navbar shadow-sm ">
-      {/* Left section: Hamburger menu for mobile */}
-      <div className="navbar-start overflow-hidden">
+    <div className="navbar bg-base-100 shadow-sm">
+      {/* Mobile & Logo */}
+      <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <button
+            onClick={toggleDropdown}
+            className="btn btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -19,27 +26,26 @@ function Navbar() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
+                d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-100  shadow overflow-hidden"
-          >
-            <li><Link className='py-5' to="/">Home</Link></li>
-            <li><Link className='py-5' to="/ResearchDesign">Research Design</Link></li>
-            <li><Link className='py-5'   to="/Decentralisation">Decentralisation</Link></li>
-            <li><Link className='py-5' to="/gramapanchayathBackground">Panchayat Background</Link></li>
-            <li><Link className='py-5' to="/data-analysis">Data Analysis</Link></li>
-            <li><Link className='py-5' to="/conclusion">Conclusion</Link></li>
-            <li><Link className='py-5' to="/contact">Contact</Link></li>
-          </ul>
+          </button>
+          {isOpen && (
+            <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+              <li><Link to="/ResearchDesign" onClick={() => setIsOpen(false)}>Research Design</Link></li>
+              <li><Link to="/Decentralisation" onClick={() => setIsOpen(false)}>Decentralisation</Link></li>
+              <li><Link to="/gramapanchayathBackground" onClick={() => setIsOpen(false)}>Panchayat Background</Link></li>
+              <li><Link to="/data-analysis" onClick={() => setIsOpen(false)}>Data Analysis</Link></li>
+              <li><Link to="/conclusion" onClick={() => setIsOpen(false)}>Conclusion</Link></li>
+              <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+            </ul>
+          )}
         </div>
-        <a className="btn btn-ghost text-xl">Project Name</a>
+        <Link to="/" className="btn btn-ghost text-xl">Project Name</Link>
       </div>
 
-      {/* Center section: Horizontal menu for desktop */}
+      {/* Desktop Nav */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li><Link to="/">Home</Link></li>
@@ -52,7 +58,7 @@ function Navbar() {
         </ul>
       </div>
 
-      {/* Right section: Button */}
+      {/* Right button */}
       <div className="navbar-end">
         <a className="btn">Get Involved</a>
       </div>
