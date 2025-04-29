@@ -13,7 +13,7 @@ useEffect(() => {
       }, []);
 
   return (
-    <div style={styles.container}>
+    <div className='p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed'>
       <h1 style={styles.mainHeading}>CHAPTER III</h1>
       <h2 style={styles.subHeading}>
         THE BACKGROUND OF GRAM PANCHAYATS IN KERALA AND PROFILE OF THE AREA
@@ -61,7 +61,7 @@ useEffect(() => {
 
       {/* Panchayati Raj in Kerala */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>Panchayati Raj in Kerala</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">Panchayati Raj in Kerala</h3>
         <p style={styles.paragraph}>
           The evolution of Panchayati Raj in Kerala has not followed a consistent
           pattern across the state, primarily due to the historical division of the
@@ -99,7 +99,7 @@ useEffect(() => {
 
       {/* Key Milestones and Legislations */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>Key Milestones and Legislations</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">Key Milestones and Legislations</h3>
         <p style={styles.paragraph}>
           The key milestones and legislations of Panchayati raj in Kerala are marked
           by significant events and laws that shaped the state’s decentralized
@@ -155,7 +155,7 @@ useEffect(() => {
 
       {/* People’s Plan Campaign in Kerala */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>People’s Plan Campaign in Kerala</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">People’s Plan Campaign in Kerala</h3>
         <p style={styles.paragraph}>
           Kerala's People's Planning initiative represents a groundbreaking
           decentralized governance model that empowers local communities in
@@ -196,7 +196,7 @@ useEffect(() => {
 
       {/* The Kerala Village Landscape */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>The Kerala Village Landscape</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">The Kerala Village Landscape</h3>
         <p style={styles.paragraph}>
           Kerala boasts a robust local self-governance framework, comprising 941
           Gram Panchayats, 152 Block Panchayats, 14 District Panchayats, 77 Taluks,
@@ -219,7 +219,7 @@ useEffect(() => {
 
       {/* Functions and Responsibilities of Gram Panchayat */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Functions and Responsibilities of Gram Panchayat
         </h3>
         <p style={styles.paragraph}>
@@ -233,7 +233,7 @@ useEffect(() => {
           they are responsible for implementing government schemes, maintaining
           records, providing certificates and disaster management.
         </p>
-        <h4 style={styles.subSectionHeading}>Financial Powers of Gram Panchayats</h4>
+        <h4 className='text-yellow-600'>Financial Powers of Gram Panchayats</h4>
         <ul style={styles.list}>
           <li>
             <strong>Allocation of funds:</strong> The Gram Panchayat receives funds
@@ -272,7 +272,7 @@ useEffect(() => {
             accountability in its financial management.
           </li>
         </ul>
-        <h4 style={styles.subSectionHeading}>Administrative Powers of Gram Panchayat</h4>
+        <h4 className='text-yellow-600'>Administrative Powers of Gram Panchayat</h4>
         <ul style={styles.list}>
           <li>
             <strong>Election and Term:</strong> Gram Panchayat members are elected
@@ -352,7 +352,7 @@ useEffect(() => {
 
       {/* Kerala Institute of Local Administration (KILA) */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Kerala Institute of Local Administration (KILA)
         </h3>
         <p style={styles.paragraph}>
@@ -416,7 +416,7 @@ useEffect(() => {
 
       {/* Kerala's Fourteenth Five-Year Plan (2022-2027) */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Kerala's Fourteenth Five-Year Plan (2022-2027)
         </h3>
         <p style={styles.paragraph}>
@@ -493,9 +493,9 @@ useEffect(() => {
 
       {/* Profile of the Area */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>PROFILE OF THE AREA</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">PROFILE OF THE AREA</h3>
 
-        <h4 style={styles.subSectionHeading}>Kerala</h4>
+        <h4 className='text-yellow-600'>Kerala</h4>
         <p style={styles.paragraph}>
           Kerala is located on India's Malabar Coast, Kerala is a state known
           locally as Keralam in the Malayalam language. Formed on November 1, 1956,
@@ -611,7 +611,7 @@ useEffect(() => {
           equitable and inclusive development.
         </p>
 
-        <h4 style={styles.subSectionHeading}>Kollam District</h4>
+        <h4 className='text-yellow-600'>Kollam District</h4>
         <p style={styles.paragraph}>
           Kollam, a southern district in Kerala, is bordered by Tamil Nadu to the
           east and the Arabian Sea to the west. It shares boundaries with Alappuzha
@@ -664,7 +664,7 @@ useEffect(() => {
           Kadakkal Revolt of 1938 taking place in the district.
         </p>
 
-        <h4 style={styles.subSectionHeading}>West Kallada Gram Panchayat</h4>
+        <h4 className='text-yellow-600'>West Kallada Gram Panchayat</h4>
         <p style={styles.paragraph}>
           West Kallada is a village Kollam district in the state of Kerala. As of
           the 2011 census, it had a population of 18,176. The pin code of the
@@ -694,7 +694,7 @@ useEffect(() => {
 
       {/* References */}
       <section style={styles.section}>
-        <h3 style={styles.sectionHeading}>References</h3>
+        <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">References</h3>
         <ol style={styles.list}>
           <li>
             Johnson, Dominic, & Johnson George. (2021). Panchayati Raj Act & Rules-
