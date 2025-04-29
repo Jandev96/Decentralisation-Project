@@ -233,7 +233,7 @@ useEffect(() => {
           they are responsible for implementing government schemes, maintaining
           records, providing certificates and disaster management.
         </p>
-        <h4 className='text-yellow-600'>Financial Powers of Gram Panchayats</h4>
+        <h4 className='text-yellow-600 font-bold'>Financial Powers of Gram Panchayats</h4>
         <ul style={styles.list}>
           <li>
             <strong>Allocation of funds:</strong> The Gram Panchayat receives funds
@@ -272,7 +272,7 @@ useEffect(() => {
             accountability in its financial management.
           </li>
         </ul>
-        <h4 className='text-yellow-600'>Administrative Powers of Gram Panchayat</h4>
+        <h4 className='text-yellow-600 font-bold'>Administrative Powers of Gram Panchayat</h4>
         <ul style={styles.list}>
           <li>
             <strong>Election and Term:</strong> Gram Panchayat members are elected
@@ -495,7 +495,7 @@ useEffect(() => {
       <section style={styles.section}>
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">PROFILE OF THE AREA</h3>
 
-        <h4 className='text-yellow-600'>Kerala</h4>
+        <h4 className='text-yellow-600 font-bold'>Kerala</h4>
         <p style={styles.paragraph}>
           Kerala is located on India's Malabar Coast, Kerala is a state known
           locally as Keralam in the Malayalam language. Formed on November 1, 1956,
@@ -611,7 +611,7 @@ useEffect(() => {
           equitable and inclusive development.
         </p>
 
-        <h4 className='text-yellow-600'>Kollam District</h4>
+        <h4 className='text-yellow-600 font-bold'>Kollam District</h4>
         <p style={styles.paragraph}>
           Kollam, a southern district in Kerala, is bordered by Tamil Nadu to the
           east and the Arabian Sea to the west. It shares boundaries with Alappuzha
@@ -664,7 +664,7 @@ useEffect(() => {
           Kadakkal Revolt of 1938 taking place in the district.
         </p>
 
-        <h4 className='text-yellow-600'>West Kallada Gram Panchayat</h4>
+        <h4 className='text-yellow-600 font-bold'>West Kallada Gram Panchayat</h4>
         <p style={styles.paragraph}>
           West Kallada is a village Kollam district in the state of Kerala. As of
           the 2011 census, it had a population of 18,176. The pin code of the
