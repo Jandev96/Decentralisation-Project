@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LeafletMap from './LeafletMap';
 
 const GramapanchayathBackground = () => {
 
@@ -13,14 +14,14 @@ useEffect(() => {
       }, []);
 
   return (
-    <div className='p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed'>
+    <div className='p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed mt-20'>
       <h1 style={styles.mainHeading}>CHAPTER III</h1>
       <h2 style={styles.subHeading}>
         THE BACKGROUND OF GRAM PANCHAYATS IN KERALA AND PROFILE OF THE AREA
       </h2>
 
       {/* Introduction */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">Introduction</h3>
         <p >
           The Gram Panchayat System in Kerala has evolved as a crucial institution
@@ -60,7 +61,7 @@ useEffect(() => {
       </section>
 
       {/* Panchayati Raj in Kerala */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">Panchayati Raj in Kerala</h3>
         <p style={styles.paragraph}>
           The evolution of Panchayati Raj in Kerala has not followed a consistent
@@ -98,7 +99,7 @@ useEffect(() => {
       </section>
 
       {/* Key Milestones and Legislations */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">Key Milestones and Legislations</h3>
         <p style={styles.paragraph}>
           The key milestones and legislations of Panchayati raj in Kerala are marked
@@ -154,7 +155,7 @@ useEffect(() => {
       </section>
 
       {/* People’s Plan Campaign in Kerala */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">People’s Plan Campaign in Kerala</h3>
         <p style={styles.paragraph}>
           Kerala's People's Planning initiative represents a groundbreaking
@@ -195,7 +196,7 @@ useEffect(() => {
       </section>
 
       {/* The Kerala Village Landscape */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">The Kerala Village Landscape</h3>
         <p style={styles.paragraph}>
           Kerala boasts a robust local self-governance framework, comprising 941
@@ -218,7 +219,7 @@ useEffect(() => {
       </section>
 
       {/* Functions and Responsibilities of Gram Panchayat */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Functions and Responsibilities of Gram Panchayat
         </h3>
@@ -351,7 +352,7 @@ useEffect(() => {
       </section>
 
       {/* Kerala Institute of Local Administration (KILA) */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Kerala Institute of Local Administration (KILA)
         </h3>
@@ -415,7 +416,7 @@ useEffect(() => {
       </section>
 
       {/* Kerala's Fourteenth Five-Year Plan (2022-2027) */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">
           Kerala's Fourteenth Five-Year Plan (2022-2027)
         </h3>
@@ -492,7 +493,7 @@ useEffect(() => {
       </section>
 
       {/* Profile of the Area */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">PROFILE OF THE AREA</h3>
 
         <h4 className='text-yellow-600 font-bold'>Kerala</h4>
@@ -691,9 +692,10 @@ useEffect(() => {
           area of 13.36 square kilometers.
         </p>
       </section>
+      <LeafletMap />
 
       {/* References */}
-      <section style={styles.section}>
+      <section style={styles.section} data-aos="fade-up">
         <h3 className="text-2xl font-semibold border-b-4 border-blue-500 inline-block pb-1 mb-4 min-w-full">References</h3>
         <ol style={styles.list}>
           <li>

@@ -13,7 +13,7 @@ const Decentralization = () => {
       }, []);
 
   return (
-    <div className="p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed">
+    <div className="p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed mt-20">
       <h1 className="text-3xl font-bold mb-6 text-center">Chapter II: Decentralization and Panchayati Raj Institutions in India</h1>
 
       <section className="mb-6" data-aos="fade-up">

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import About from './About';
 import KeySectionsSnapshot from './KeySectionSnapShot';
 
+
 function Hero() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -53,6 +54,7 @@ function Hero() {
       </div>
 
       {/* About Section */}
+      
       <About />
       <KeySectionsSnapshot />
     </>
