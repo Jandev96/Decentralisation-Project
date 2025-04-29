@@ -5,6 +5,7 @@ import About from "../component/About";
 import ResearchDesign from "../component/ResearchDesign";
 import Decentralisation from "../component/Decentralisation";
 import GramapanchayathBackground from "../component/GramapanchayathBackground";
+import DataAnalysis from "../component/DataAnalysis";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: "/gramapanchayathBackground",
                 element: <GramapanchayathBackground />,
+            },
+            {
+                path: "/DataAnalysis",
+                element: <DataAnalysis />,
             },
           
         ]}])

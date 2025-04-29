@@ -50,7 +50,7 @@ function Navbar() {
             <li><Link to="/ResearchDesign">Research Design</Link></li>
             <li><Link to="/Decentralisation">Decentralisation</Link></li>
             <li><Link to="/gramapanchayathBackground">Panchayat Background</Link></li>
-            <li><Link to="/data-analysis">Data Analysis</Link></li>
+            <li><Link to="/DataAnalysis">Data Analysis</Link></li>
             <li><Link to="/conclusion">Conclusion</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
@@ -73,7 +73,7 @@ function Navbar() {
           <li><Link to="/ResearchDesign" onClick={() => setIsOpen(false)}>Research Design</Link></li>
           <li><Link to="/Decentralisation" onClick={() => setIsOpen(false)}>Decentralisation</Link></li>
           <li><Link to="/gramapanchayathBackground" onClick={() => setIsOpen(false)}>Panchayat Background</Link></li>
-          <li><Link to="/data-analysis" onClick={() => setIsOpen(false)}>Data Analysis</Link></li>
+          <li><Link to="/DataAnalysis" onClick={() => setIsOpen(false)}>Data Analysis</Link></li>
           <li><Link to="/conclusion" onClick={() => setIsOpen(false)}>Conclusion</Link></li>
           <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
         </ul>
