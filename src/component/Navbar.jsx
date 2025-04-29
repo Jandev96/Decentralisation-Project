@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className="navbar shadow-sm">
+    <div className="navbar shadow-sm ">
       {/* Left section: Hamburger menu for mobile */}
-      <div className="navbar-start">
+      <div className="navbar-start overflow-hidden">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -25,15 +25,15 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-100  shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-100  shadow overflow-hidden"
           >
-            <li><Link className='p-5 ' to="/">Home</Link></li>
-            <li><Link className='p-5' to="/research-design">Research Design</Link></li>
-            <li><Link className='p-5'   to="/decentralisation">Decentralisation</Link></li>
-            <li><Link className='p-5' to="/panchayat-background">Panchayat Background</Link></li>
-            <li><Link className='p-5' to="/data-analysis">Data Analysis</Link></li>
-            <li><Link className='p-5' to="/conclusion">Conclusion</Link></li>
-            <li><Link className='p-5' to="/contact">Contact</Link></li>
+            <li><Link className='py-5' to="/">Home</Link></li>
+            <li><Link className='py-5' to="/research-design">Research Design</Link></li>
+            <li><Link className='py-5'   to="/decentralisation">Decentralisation</Link></li>
+            <li><Link className='py-5' to="/panchayat-background">Panchayat Background</Link></li>
+            <li><Link className='py-5' to="/data-analysis">Data Analysis</Link></li>
+            <li><Link className='py-5' to="/conclusion">Conclusion</Link></li>
+            <li><Link className='py-5' to="/contact">Contact</Link></li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">Project Name</a>
