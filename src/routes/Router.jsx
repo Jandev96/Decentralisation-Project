@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../Layout/RootLayout";
 import Hero from "../component/Hero";
 import About from "../component/About";
+import ResearchDesign from "../component/ResearchDesign";
+import Decentralisation from "../component/Decentralisation";
+import GramapanchayathBackground from "../component/GramapanchayathBackground";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +19,18 @@ export const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />,
+            },
+            {
+                path: "/ResearchDesign",
+                element: <ResearchDesign />,
+            },
+            {
+                path: "/Decentralisation",
+                element: <Decentralisation />,
+            },
+            {
+                path: "/gramapanchayathBackground",
+                element: <GramapanchayathBackground />,
             },
           
         ]}])

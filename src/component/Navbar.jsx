@@ -28,9 +28,9 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-100  shadow overflow-hidden"
           >
             <li><Link className='py-5' to="/">Home</Link></li>
-            <li><Link className='py-5' to="/research-design">Research Design</Link></li>
-            <li><Link className='py-5'   to="/decentralisation">Decentralisation</Link></li>
-            <li><Link className='py-5' to="/panchayat-background">Panchayat Background</Link></li>
+            <li><Link className='py-5' to="/ResearchDesign">Research Design</Link></li>
+            <li><Link className='py-5'   to="/Decentralisation">Decentralisation</Link></li>
+            <li><Link className='py-5' to="/gramapanchayathBackground">Panchayat Background</Link></li>
             <li><Link className='py-5' to="/data-analysis">Data Analysis</Link></li>
             <li><Link className='py-5' to="/conclusion">Conclusion</Link></li>
             <li><Link className='py-5' to="/contact">Contact</Link></li>
@@ -42,10 +42,10 @@ function Navbar() {
       {/* Center section: Horizontal menu for desktop */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/research-design">Research Design</Link></li>
-          <li><Link to="/decentralisation">Decentralisation</Link></li>
-          <li><Link to="/panchayat-background">Panchayat Background</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/ResearchDesign">Research Design</Link></li>
+          <li><Link to="/Decentralisation">Decentralisation</Link></li>
+          <li><Link to="/gramapanchayathBackground">Panchayat Background</Link></li>
           <li><Link to="/data-analysis">Data Analysis</Link></li>
           <li><Link to="/conclusion">Conclusion</Link></li>
           <li><Link to="/contact">Contact</Link></li>

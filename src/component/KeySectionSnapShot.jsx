@@ -8,12 +8,12 @@ const keySections = [
   {
     title: "Research Design",
     description: "A brief overview of the methodology and approach used to gather data and analyze the results.",
-    link: "#research-design"
+    link: "/ResearchDesign"
   },
   {
     title: "Panchayat Background",
     description: "Insights into the historical context and structure of the Panchayats in rural governance.",
-    link: "#panchayat-background"
+    link: "/gramapanchayathBackground"
   },
   {
     title: "Data Analysis",
@@ -45,7 +45,7 @@ const KeySectionsSnapshot = () => {
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-4 roboto-heading">{section.title}</h3>
               <p className="text-gray-600 mb-4">{section.description}</p>
-              <Link href={section.link} className="text-blue-600 hover:underline">Read More</Link>
+              <Link to={section.link} className="text-blue-600 hover:underline">Read More</Link>
             </div>
           ))}
         </div>
