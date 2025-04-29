@@ -22,7 +22,7 @@ function LeafletMap() {
       center={[9.0166, 76.6032]} // West Kallada coordinates
       zoom={13}
       scrollWheelZoom={false}
-      zoomControl={false}
+      
       dragging={false}
       doubleClickZoom={false}
       boxZoom={false}
