@@ -27,7 +27,7 @@ function LeafletMap() {
       doubleClickZoom={false}
       boxZoom={false}
       keyboard={false}
-      style={{ height: '500px', width: '100%' }}
+      style={{ height: '500px', width: '100%',zIndex:"1" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'

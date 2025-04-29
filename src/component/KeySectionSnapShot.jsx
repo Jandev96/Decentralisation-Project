@@ -18,7 +18,7 @@ const keySections = [
   {
     title: "Data Analysis",
     description: "An exploration of the data analysis techniques used to draw conclusions from the collected data.",
-    link: "#data-analysis"
+    link: "/DataAnalysis"
   },
   {
     title: "Community Impact",

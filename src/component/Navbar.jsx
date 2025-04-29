@@ -64,7 +64,7 @@ function Navbar() {
 
       {/* Slide-in mobile menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-base-100 z-40 shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 z-50 left-0 h-full w-64 bg-base-100  shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:hidden pt-20`}
       >
