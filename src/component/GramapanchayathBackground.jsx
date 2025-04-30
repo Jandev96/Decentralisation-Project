@@ -14,7 +14,7 @@ useEffect(() => {
       }, []);
 
   return (
-    <div className='p-6 max-w-5xl mx-auto text-justify text-gray-100 leading-relaxed mt-20'>
+    <div className='p-6 max-w-5xl mx-auto text-justify  leading-relaxed mt-20'>
       <h1 style={styles.mainHeading}>CHAPTER III</h1>
       <h2 style={styles.subHeading}>
         THE BACKGROUND OF GRAM PANCHAYATS IN KERALA AND PROFILE OF THE AREA

@@ -8,8 +8,8 @@ function Navbar() {
     <>
       {/* Top Navbar */}
       <div className="navbar bg-base-100 shadow-md fixed top-0 left-0 right-0 z-50">
-        <div className="navbar-start">
-          {/* Hamburger for mobile */}
+        {/* Start: Hamburger + Logo */}
+        <div className="navbar-start gap-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="btn btn-circle btn-ghost lg:hidden"
@@ -43,7 +43,7 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Center: Desktop Menu */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
@@ -56,15 +56,41 @@ function Navbar() {
           </ul>
         </div>
 
-        {/* Right button */}
-        <div className="navbar-end hidden lg:flex">
-          <a className="btn">Get Involved</a>
+        {/* End: Theme Toggle + Button */}
+        <div className="navbar-end gap-3 pr-2">
+          {/* Theme Toggle (visible on all screens) */}
+          <label className="toggle text-base-content">
+            <input type="checkbox" value="bumblebee" className="theme-controller" />
+            {/* Sun icon */}
+            <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </g>
+            </svg>
+            {/* Moon icon */}
+            <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </g>
+            </svg>
+          </label>
+
+          {/* Desktop-only button */}
+          
         </div>
       </div>
 
       {/* Slide-in mobile menu */}
       <div
-        className={`fixed top-0 z-50 left-0 h-full w-64 bg-base-100  shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 z-40 left-0 h-full w-64 bg-base-100 shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:hidden pt-20`}
       >
