@@ -33,10 +33,10 @@ function About() {
         <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-primary">
           About the Project
         </h2>
-        <p className="text-lg md:text-xl text-gray-700 mb-6">
+        <p className="text-lg md:text-xl  mb-6">
           This project explores the transformative impact of decentralisation in rural India. It highlights how empowering local governance through Panchayati Raj Institutions strengthens democracy, improves development outcomes, and ensures that the voices of villages are heard and respected.
         </p>
-        <p className="text-md md:text-lg text-gray-600">
+        <p className="text-md md:text-lg ">
           The research emphasizes the importance of community participation and leadership in driving sustainable growth. Decentralisation fosters inclusive decision-making, promotes transparency, and creates self-reliant villages ready to tackle their unique challenges and opportunities.
         </p>
       </div>

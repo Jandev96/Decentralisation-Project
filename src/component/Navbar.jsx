@@ -94,7 +94,7 @@ function Navbar() {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:hidden pt-20`}
       >
-        <ul className="menu p-4">
+        <ul className="menu p-4 "style={{fontSize:"19px",rowGap:"10px"}}>
           <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/ResearchDesign" onClick={() => setIsOpen(false)}>Research Design</Link></li>
           <li><Link to="/Decentralisation" onClick={() => setIsOpen(false)}>Decentralization</Link></li>
