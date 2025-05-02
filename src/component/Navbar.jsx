@@ -39,7 +39,7 @@ function Navbar() {
             </svg>
           </button>
           <Link to="/" className="btn btn-ghost text-xl ml-2">
-            Project Name
+            Project
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ function Navbar() {
             <li><Link to="/gramapanchayathBackground">Panchayat Background</Link></li>
             <li><Link to="/DataAnalysis">Data Analysis</Link></li>
             <li><Link to="/conclusion">Conclusion</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+           
           </ul>
         </div>
 
@@ -101,7 +101,7 @@ function Navbar() {
           <li><Link to="/gramapanchayathBackground" onClick={() => setIsOpen(false)}>Panchayat Background</Link></li>
           <li><Link to="/DataAnalysis" onClick={() => setIsOpen(false)}>Data Analysis</Link></li>
           <li><Link to="/conclusion" onClick={() => setIsOpen(false)}>Conclusion</Link></li>
-          <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          
         </ul>
       </div>
 

@@ -6,6 +6,7 @@ import ResearchDesign from "../component/ResearchDesign";
 import Decentralisation from "../component/Decentralisation";
 import GramapanchayathBackground from "../component/GramapanchayathBackground";
 import DataAnalysis from "../component/DataAnalysis";
+import Conclusion from "../component/Conclusion";
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
             {
                 path: "/DataAnalysis",
                 element: <DataAnalysis />,
+            },
+            {
+                path: "/conclusion",
+                element: <Conclusion />,
             },
           
         ]}])

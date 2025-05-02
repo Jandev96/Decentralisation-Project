@@ -7,7 +7,7 @@ function Footer() {
         {/* Project Info */}
         <div className="mb-4">
           <p className="font-semibold ">
-            Project Guide: Prof. John Doe | Created by: ANUPAMA P S
+             | Created by: ANUPAMA P S
           </p>
         </div>
 
