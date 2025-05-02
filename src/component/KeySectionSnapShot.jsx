@@ -11,7 +11,7 @@ const keySections = [
     link: "/ResearchDesign"
   },
   {
-    title: "Decentalization",
+    title: "Decentralization",
     description: "Empowering villages through local decision-making and transparent governance for sustainable community development.",
     link: "/Decentralisation"
   },
