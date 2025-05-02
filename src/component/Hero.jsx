@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { TypeAnimation } from 'react-type-animation';
 import About from './About';
 import KeySectionsSnapshot from './KeySectionSnapShot';
-
 
 function Hero() {
   useEffect(() => {
@@ -27,10 +27,29 @@ function Hero() {
         <div className="hero-content text-center text-neutral-content relative z-10 flex flex-col items-center">
           <div className="max-w-2xl">
             <h1 className="mb-6 text-4xl md:text-6xl font-bold font-serif leading-tight">
-              Empowering Villages Through Decentralisation
+              <TypeAnimation
+                sequence={[
+                  'Empowering Villages Through Decentralisation', // Text to type
+                  1000, // Wait 1s before next step
+                ]}
+                speed={50} // Typing speed (lower is faster)
+                cursor={false} // Show cursor
+                repeat={0} // Do not repeat
+                style={{ display: 'inline-block' }} // Ensure proper styling
+              />
             </h1>
             <p className="mb-8 text-lg md:text-xl text-gray-200">
-              Building stronger communities by giving power back to the people. Join us on the journey of rural empowerment and sustainable development.
+              <TypeAnimation
+                sequence={[
+                  1000, // Wait 1s to start after h1 animation
+                  'Building stronger communities by giving power back to the people. Join us on the journey of rural empowerment and sustainable development.', // Text to type
+                  1000, // Wait 1s before next step
+                ]}
+                speed={60} // Typing speed
+                cursor={false} // Show cursor
+                repeat={0} // Do not repeat
+                style={{ display: 'inline-block' }} // Ensure proper styling
+              />
             </p>
             <a href="#about" className="btn btn-primary px-8 py-3 text-lg">
               Learn More
@@ -54,7 +73,6 @@ function Hero() {
       </div>
 
       {/* About Section */}
-      
       <About />
       <KeySectionsSnapshot />
     </>

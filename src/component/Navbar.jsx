@@ -48,7 +48,7 @@ function Navbar() {
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/ResearchDesign">Research Design</Link></li>
-            <li><Link to="/Decentralisation">Decentralisation</Link></li>
+            <li><Link to="/Decentralisation">Decentralization</Link></li>
             <li><Link to="/gramapanchayathBackground">Panchayat Background</Link></li>
             <li><Link to="/DataAnalysis">Data Analysis</Link></li>
             <li><Link to="/conclusion">Conclusion</Link></li>
@@ -97,7 +97,7 @@ function Navbar() {
         <ul className="menu p-4">
           <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/ResearchDesign" onClick={() => setIsOpen(false)}>Research Design</Link></li>
-          <li><Link to="/Decentralisation" onClick={() => setIsOpen(false)}>Decentralisation</Link></li>
+          <li><Link to="/Decentralisation" onClick={() => setIsOpen(false)}>Decentralization</Link></li>
           <li><Link to="/gramapanchayathBackground" onClick={() => setIsOpen(false)}>Panchayat Background</Link></li>
           <li><Link to="/DataAnalysis" onClick={() => setIsOpen(false)}>Data Analysis</Link></li>
           <li><Link to="/conclusion" onClick={() => setIsOpen(false)}>Conclusion</Link></li>

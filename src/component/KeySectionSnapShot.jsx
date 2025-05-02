@@ -11,6 +11,11 @@ const keySections = [
     link: "/ResearchDesign"
   },
   {
+    title: "Decentalization",
+    description: "Empowering villages through local decision-making and transparent governance for sustainable community development.",
+    link: "/Decentralisation"
+  },
+  {
     title: "Panchayat Background",
     description: "Insights into the historical context and structure of the Panchayats in rural governance.",
     link: "/gramapanchayathBackground"
@@ -21,9 +26,9 @@ const keySections = [
     link: "/DataAnalysis"
   },
   {
-    title: "Community Impact",
+    title: "Conclusion",
     description: "A summary of the results and their impact on the local communities and rural empowerment.",
-    link: "#community-impact"
+    link: "/conclusion"
   }
 ];
 
@@ -36,7 +41,7 @@ const KeySectionsSnapshot = () => {
     <div className="py-16 bg-gray-100" id="key-sections">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Sections Snapshot</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {keySections.map((section, index) => (
             <div
               key={index}
@@ -45,7 +50,7 @@ const KeySectionsSnapshot = () => {
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-4 roboto-heading">{section.title}</h3>
               <p className="text-gray-600 mb-4">{section.description}</p>
-              <Link to={section.link} className="text-blue-600 hover:underline">Read More</Link>
+              <Link to={section.link} class="rounded-full border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Read More </Link>
             </div>
           ))}
         </div>
